@@ -30,7 +30,7 @@ export default function WhatIsAIS() {
         </p>
 
         <Image
-          src="/ais-group.jpg"
+          src="/whatisais.png"
           width={500}
           height={500}
           alt="Logo"

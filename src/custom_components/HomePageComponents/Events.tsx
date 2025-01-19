@@ -1,7 +1,9 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 import {
   Card,
   CardHeader,
@@ -13,53 +15,104 @@ import {
 import contentData from "@/contentData";
 
 export default function EventsSection() {
+  const containerVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: {
+      opacity: 0,
+      y: 50,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        bounce: 0.3,
+        duration: 0.8,
+      },
+    },
+  };
+
+  const hoverVariants = {
+    hover: {
+      y: -8,
+      transition: {
+        duration: 0.3,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
-    <section id="news" className="py-12 md:py-24 lg:py-32 bg-muted">
-      <div className="container max-w-5xl mx-auto px-4 md:px-6">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-6">
+    <section
+      id="news"
+      className="py-8 md:py-16 lg:py-24 bg-muted overflow-hidden bg-white"
+    >
+      <div className="container max-w-5xl mx-auto px-4">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5 }}
+          className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tighter text-center mb-6"
+        >
           Events
-        </h2>
-        <div className="flex flex-wrap justify-center">
+        </motion.h2>
+
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+        >
           {contentData.club.events.map((events, index) => (
-            <div key={index} className="md:w-1/2 lg:w-1/3 p-2">
-              <Card className="cursor-pointer">
+            <motion.div
+              key={index}
+              variants={cardVariants}
+              whileHover={hoverVariants.hover}
+              className="w-full"
+            >
+              <Card className="h-full cursor-pointer transition-shadow duration-300 hover:shadow-lg bg-slate-50 rounded-2xl">
                 <CardHeader>
-                  <CardTitle>{events.title}</CardTitle>
+                  <CardTitle className="text-lg md:text-xl">
+                    {events.title}
+                  </CardTitle>
                   <CardDescription>{events.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Image
-                    src={events.image}
-                    alt="News Image"
-                    className="rounded-t-md object-cover"
-                    width="300"
-                    height="200"
-                    style={{
-                      aspectRatio: "300/200",
-                      objectFit: "cover",
-                    }}
-                  />
+                  <div className="relative w-full h-48 overflow-hidden rounded-md">
+                    <Image
+                      src={events.image}
+                      alt="Event Image"
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      priority={index < 3}
+                    />
+                  </div>
                 </CardContent>
                 <CardFooter>
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between w-full">
                     <span className="text-sm text-muted-foreground">
                       {events.date}
                     </span>
-                    {/* <Link
-                      href={events.link}
-                      className="text-sm font-medium hover:underline"
-                    >
-                      Read More
-                    </Link> */}
                   </div>
                 </CardFooter>
               </Card>
-            </div>
+            </motion.div>
           ))}
-        </div>
-        {/* <Button variant="link" className="mt-6 mx-auto block text-center">
-          Read More Latest Developments
-        </Button> */}
+        </motion.div>
       </div>
     </section>
   );

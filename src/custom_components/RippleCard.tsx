@@ -8,7 +8,7 @@ export function RippleCard() {
       <div className="text-center">
         <Ripple />
         <h2 className="text-4xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6 ">
-          Events Coming Soon!
+          More Events Coming Soon!
         </h2>
         {/* <p className="px-2 text-lg md:text-xl max-w-2xl text-center">
           Be part of a community that is passionate about Artificial

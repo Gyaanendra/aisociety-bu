@@ -25,35 +25,32 @@ const steps: Step[] = [
   {
     step: "Step 1",
     title: "Fill the Form",
-    description: "Forms for Junior Core Technical + Non-Technical positions",
+    description: "Forms for Junior/Senior Core Positions",
     icon: "📝",
     formLink: "#",
 
-    dates: "Applications Closed",
-    status: "Completed",
-    applications: 200,
-
+    dates: "Applications open",
+    status: "Ongoing",
+    applications: 13,
   },
-  
+
   {
     step: "Step 2",
     title: "Form Shortlisting",
     description:
       "Form review period where you will be judged by the form responses. AI Generated Form Responses will be rejected.",
     icon: "🔍",
-    dates: "5th September-7th September",
+    dates: "20th January-24th January",
 
-    status: "Completed",
-
+    status: "Ongoing",
   },
   {
     step: "Step 3",
     title: "One-on-One Interview",
-    description:
-      "Candidate is interviewed on technical and soft skills.",
+    description: "Candidate is interviewed on technicalities and soft skills.",
     icon: "🗣️",
-    dates: "7th-11th September",
-    status: "Ongoing",
+    dates: "25th January-29th January",
+    status: "Upcoming",
   },
 ];
 

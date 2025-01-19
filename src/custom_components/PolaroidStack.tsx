@@ -1,46 +1,50 @@
-import React from "react";
-import Image from "next/image";
+"use client";
 
-interface PolaroidProps {
+import React from "react";
+import { motion } from "framer-motion";
+
+interface Image {
   src: string;
   alt: string;
-  rotation?: number;
 }
 
-const Polaroid: React.FC<PolaroidProps> = ({ src, alt, rotation = 0 }) => (
-  <div
-    className="absolute bg-white p-2 shadow-md"
-    style={{
-      transform: `rotate(${rotation}deg)`,
-      width: "250px",
-      height: "300px",
-    }}
-  >
-    <Image
-      src={src}
-      alt={alt}
-      width={280}
-      height={280}
-      style={{ objectFit: "cover" }}
-    />
-    <div className="mt-4 text-center text-normal font-medium">{alt}</div>
-  </div>
-);
-
 interface PolaroidStackProps {
-  images: Array<{ src: string; alt: string }>;
+  images: Image[];
 }
 
 const PolaroidStack: React.FC<PolaroidStackProps> = ({ images }) => {
   return (
     <div className="relative w-64 h-64">
       {images.map((image, index) => (
-        <Polaroid
+        <motion.div
           key={index}
-          src={image.src}
-          alt={image.alt}
-          rotation={Math.random() * 20 - 10} // Random rotation between -10 and 10 degrees
-        />
+          className="absolute top-0 left-0 bg-white p-2 shadow-lg"
+          style={{
+            width: "200px",
+            height: "240px",
+            transformOrigin: "center",
+          }}
+          initial={{ rotate: 0, scale: 0.8, opacity: 0 }}
+          animate={{
+            rotate: (index - 1) * 5,
+            scale: 1 - index * 0.05,
+            opacity: 1,
+            z: -index * 10,
+          }}
+          transition={{
+            duration: 0.5,
+            delay: index * 0.2,
+            ease: "easeOut",
+          }}
+          whileHover={{ scale: 1.05, rotate: 0, z: 10 }}
+        >
+          <img
+            src={image.src || "/placeholder.svg"}
+            alt={image.alt}
+            className="w-full h-48 object-cover mb-2"
+          />
+          <p className="text-center text-sm">{image.alt}</p>
+        </motion.div>
       ))}
     </div>
   );
