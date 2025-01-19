@@ -16,10 +16,10 @@ export default function HeroContent() {
           height={800}
           className="mx-auto w-full max-w-[100%] h-auto"
         />
-        <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl ">
+        {/* <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl ">
           {contentData.club.name}
-        </h1>
-        <p className="text-muted-foreground text-xl mt-10">
+        </h1> */}
+        <p className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-5xl ">
           {contentData.club.supportedBy}
         </p>
         <div className="flex flex-wrap justify-center gap-4 mt-4">

@@ -3,7 +3,8 @@ import { cn } from "@/lib/utils";
 import "./globals.css";
 import Navbar from "@/custom_components/CommonComponents/Navbar";
 import Footer from "@/custom_components/CommonComponents/Footer";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
+import { AnimatePresence } from "framer-motion";
 
 const fontHeading = Manrope({
   subsets: ["latin"],
@@ -28,7 +29,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         )}
       >
         <Navbar />
-        {children}
+        <AnimatePresence mode="wait">{children}</AnimatePresence>
         <Analytics />
         <Footer />
       </body>

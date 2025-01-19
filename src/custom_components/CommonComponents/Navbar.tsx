@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
@@ -18,10 +18,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import ShimmerButton from "../ShimmerCard";
+import { PulsatingButton } from "@/components/ui/pulsating-button";
 
 const Navbar = () => {
   return (
-    <header className="container mx-auto z-50 sticky top-2 px-6 md:px-12 py-2 text-foreground bg-white/60 backdrop-blur-lg border-2 rounded-xl shadow-xl flex items-center justify-between">
+    <header className="container mx-auto z-50 sticky top-2 px-6 md:px-12 py-2 text-foreground bg-white/30 backdrop-blur-lg border-2 border-white/20 rounded-xl shadow-xl flex items-center justify-between">
       <Link href="/">
         <div className="flex items-center gap-2">
           <Image
@@ -31,27 +32,22 @@ const Navbar = () => {
             alt="Logo"
             className="mx-auto"
           />
-          {/* <span className="text-xl font-semibold">AI Society</span> */}
         </div>
       </Link>
       <NavigationMenu>
         <NavigationMenuList className="hidden lg:flex gap-4">
-          {/* {["About", "Events", "Team", "Blog", "Projects", "Publications"].map( */}
-          {[""].map(
-
-            (item) => (
-              <NavigationMenuItem key={item}>
-                <NavigationMenuLink asChild>
-                  <Link
-                    href={`${item.toLowerCase()}`}
-                    className="font-bold hover:underline underline-offset-4"
-                  >
-                    {item}
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            ),
-          )}
+          {[""].map((item) => (
+            <NavigationMenuItem key={item}>
+              <NavigationMenuLink asChild>
+                <Link
+                  href={`${item.toLowerCase()}`}
+                  className="font-bold hover:underline underline-offset-4"
+                >
+                  {item}
+                </Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+          ))}
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
               <Link href="join" className="ml-6">
@@ -73,16 +69,7 @@ const Navbar = () => {
             <SheetTitle>Menu</SheetTitle>
           </SheetHeader>
           <div className="flex flex-col items-start">
-            {[
-              "Home",
-              "About",
-              // "Events",
-              // "Team",
-              // "Blog",
-              // "Projects",
-              // "Publications",
-              "Join",
-            ].map((item) => (
+            {["Home", "About", "Join"].map((item) => (
               <Link
                 href={`${item.toLowerCase().replace(" ", "-")}`}
                 key={item}

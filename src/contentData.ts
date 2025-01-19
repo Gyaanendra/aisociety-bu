@@ -1,12 +1,11 @@
 // Save this in a file such as contentData.js
 const contentData = {
   whatsapp_link: "https://chat.whatsapp.com/JNWPTs2NwBf1sTaHMF4t3Y",
-  form_link:
-    "https://docs.google.com/forms/d/1AWch9cXvkOtvlDGXiYe31th86wNJ5eYnoq_GSQJ1wEs/viewform",
+  form_link: "https://forms.gle/nWE5KMYt6x5rwUQj9",
   club: {
     logo: "/AISociety_Logo_Dark.png",
     name: "Artificial Intelligence Society (AIS)",
-    supportedBy: "Training Minds one Epoch at a Time",
+    supportedBy: "Training Minds,\nOne Epoch at a Time",
     logos: ["/bennett-logo.webp", "/cabinet-logo.png"],
     about: {
       text: "The AI Specialization Club (AIS) at Bennett University is dedicated to fostering a deep passion for Artificial Intelligence. The club engages in end-to-end project development, achieves victories in hackathons, conducts informative workshops, upskills members through guidance from senior student mentors as well as experienced faculty members. We actively participate in open-source development as well.",
@@ -37,21 +36,76 @@ const contentData = {
         image: "/event-biy.png",
         link: "#",
       },
+      {
+        title: "gen ai copilot workshop",
+        description:
+          "Copilot Lab Inaugration Ceremony \nInaugration Ceremony and Workshop for the Copilot Lab sponsored by Microsoft. Included guest sessions from Top Experts",
+        date: "February 12-17, 2024",
+        image: "/co.jpg",
+        link: "#",
+      },
+      {
+        title: "Club carnival + (fresher’s) orientation",
+        description:
+          "Freshers Orientation and Club Carnival for the new batch of students. Included a variety of fun demos, games and fun events",
+        date: "February 12-17, 2024",
+        image: "/event-biy.png",
+        link: "#",
+      },
+      {
+        title: "Ai 101",
+        description:
+          "Transformer-Based NER e-commerce chatbot, FastAPI deployment, exploration of Keras, TensorFlow, HuggingFace, and FastAPI.",
+        date: "February 12-17, 2024",
+        image: "/event-biy.png",
+        link: "#",
+      },
+      {
+        title: "Project showcase",
+        description:
+          "AIS shined at the Project Showcase, presenting over 10 groundbreaking projects that redefined innovation and creativity!.",
+        date: "February 12-17, 2024",
+        image: "/projectshowcase.png",
+        link: "#",
+      },
+      {
+        title: "Gen ai xr workshop",
+        description:
+          "Transformer-Based NER e-commerce chatbot, FastAPI deployment, exploration of Keras, TensorFlow, HuggingFace, and FastAPI.",
+        date: "February 12-17, 2024",
+        image: "/event-biy.png",
+        link: "#",
+      },
+      {
+        title: "Infossesion+Ai hunt 2.0",
+        description:
+          "Transformer-Based NER e-commerce chatbot, FastAPI deployment, exploration of Keras, TensorFlow, HuggingFace, and FastAPI.",
+        date: "February 12-17, 2024",
+        image: "/event-biy.png",
+        link: "#",
+      },
+      {
+        title: "Tech Arena",
+        description:
+          "Transformer-Based NER e-commerce chatbot, FastAPI deployment, exploration of Keras, TensorFlow, HuggingFace, and FastAPI.",
+        date: "February 12-17, 2024",
+        image: "/event-biy.png",
+        link: "#",
+      },
     ],
     leadership: [
       {
-        name: "Mann Acharya",
-        position:
-          "President (3rd Year, B.Tech CSE, Google Certified ML Engineer)",
+        name: "Samaksh Tyagi",
+        position: "President (2rd Year, B.Tech CSE)",
         photo: "https://picsum.photos/120?random=11",
       },
       {
-        name: "Moaksh Kakkar",
-        position: "Vice President (2nd Year, B.Tech CSE)",
+        name: "Aviral jain",
+        position: "Vice President (3rd Year, B.Tech CSE)",
         photo: "https://picsum.photos/120?random=12",
       },
       {
-        name: "Manya Mahajan",
+        name: "Surabhi Sharma",
         position: "General Secretary (2nd Year, B.Tech CSE)",
         photo: "https://picsum.photos/120?random=13",
       },

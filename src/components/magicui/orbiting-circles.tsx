@@ -7,7 +7,7 @@ export interface OrbitingCirclesProps {
   duration?: number;
   delay?: number;
   radius?: number;
-  path?: boolean;
+  path?: boolean; // Add path prop
 }
 
 export default function OrbitingCircles({
@@ -17,7 +17,7 @@ export default function OrbitingCircles({
   duration = 20,
   delay = 10,
   radius = 50,
-  path = true,
+  path = true, // Default to true
 }: OrbitingCirclesProps) {
   return (
     <>
@@ -48,7 +48,7 @@ export default function OrbitingCircles({
         className={cn(
           "absolute flex size-full transform-gpu animate-orbit items-center justify-center rounded-full border bg-black/10 [animation-delay:calc(var(--delay)*1000ms)] dark:bg-white/10",
           { "[animation-direction:reverse]": reverse },
-          className,
+          className
         )}
       >
         {children}
