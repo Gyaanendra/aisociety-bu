@@ -41,7 +41,7 @@ const contentData = {
         description:
           "Copilot Lab Inaugration Ceremony \nInaugration Ceremony and Workshop for the Copilot Lab sponsored by Microsoft. Included guest sessions from Top Experts like Ansh Mehra",
         date: "August 13, 2024",
-        image: "/co.jpg",
+        image: "/co.png",
         link: "#",
       },
       {
@@ -84,14 +84,14 @@ const contentData = {
         image: "/aihunt.png",
         link: "#",
       },
-      // {
-      //   title: "Tech Arena",
-      //   description:
-      //     "TechArena 2025 showcased groundbreaking student projects and interactive tech games, celebrating innovation and creativity in the world of technology.",
-      //   date: "January 15, 2024",
-      //   image: "/event-biy.png",
-      //   link: "#",
-      // },
+      {
+        title: "Tech Arena",
+        description:
+          "TechArena 2025 showcased groundbreaking student projects and interactive tech games, celebrating innovation and creativity in the world of technology.",
+        date: "January 15, 2025",
+        image: "/techarena.png",
+        link: "#",
+      },
     ],
     leadership: [
       {
