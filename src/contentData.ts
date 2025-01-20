@@ -87,7 +87,7 @@ const contentData = {
       {
         title: "Tech Arena",
         description:
-          "TechArena 2025 showcased groundbreaking student projects and interactive tech games, celebrating innovation and creativity in the world of technology.",
+          "AIS proudly participated in TechArena 2025, presenting innovative projects and connecting with a vibrant community of tech enthusiasts and industry experts"
         date: "January 15, 2025",
         image: "/techarena.png",
         link: "#",
