@@ -87,7 +87,7 @@ const contentData = {
       {
         title: "Tech Arena",
         description:
-          "AIS proudly participated in TechArena 2025, presenting innovative projects and connecting with a vibrant community of tech enthusiasts and industry experts"
+          "AIS proudly participated in TechArena 2025, presenting innovative projects and connecting with a vibrant community of tech enthusiasts and industry experts",
         date: "January 15, 2025",
         image: "/techarena.png",
         link: "#",
