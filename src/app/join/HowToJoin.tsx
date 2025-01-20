@@ -40,7 +40,7 @@ const steps: Step[] = [
     description:
       "Form review period where you will be judged by the form responses. AI Generated Form Responses will be rejected.",
     icon: "🔍",
-    dates: "20th January-24th January",
+    dates: "21st January-24th January",
 
     status: "Ongoing",
   },
