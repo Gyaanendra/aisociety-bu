@@ -63,7 +63,7 @@ const contentData = {
       {
         title: "Project Showcase",
         description:
-          "AIS shone at the Project Showcase, presenting over 10 groundbreaking projects, the most by any student body, that redefined innovation and creativity!"
+          "AIS shone at the Project Showcase, presenting over 10 groundbreaking projects, the most by any student body, that redefined innovation and creativity!",
         date: "October 21, 2024",
         image: "/projectshowcase.png",
         link: "#",
@@ -79,7 +79,7 @@ const contentData = {
       {
         title: "AI Hunt 2.0",
         description:
-          "AI Hunt 2.0 was an exciting 48-hour online cryptic treasure hunt, featuring a Gen AI workshop, an info session, and dynamic problem-solving challenges that pushed the boundaries of AI exploration."
+          "AI Hunt 2.0 was an exciting 48-hour online cryptic treasure hunt, featuring a Gen AI workshop, an info session, and dynamic problem-solving challenges that pushed the boundaries of AI exploration.",
         date: "November 13-17, 2024",
         image: "/aihunt.png",
         link: "#",
