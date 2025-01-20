@@ -37,61 +37,61 @@ const contentData = {
         link: "#",
       },
       {
-        title: "gen ai copilot workshop",
+        title: "Gen AI Copilot Workshop",
         description:
-          "Copilot Lab Inaugration Ceremony \nInaugration Ceremony and Workshop for the Copilot Lab sponsored by Microsoft. Included guest sessions from Top Experts",
-        date: "February 12-17, 2024",
+          "Copilot Lab Inaugration Ceremony \nInaugration Ceremony and Workshop for the Copilot Lab sponsored by Microsoft. Included guest sessions from Top Experts like Ansh Mehra",
+        date: "August 13, 2024",
         image: "/co.jpg",
         link: "#",
       },
       {
-        title: "Club carnival + (fresher’s) orientation",
+        title: "Club Carnival & Fresher’s Orientation",
         description:
-          "Freshers Orientation and Club Carnival for the new batch of students. Included a variety of fun demos, games and fun events",
-        date: "February 12-17, 2024",
-        image: "/event-biy.png",
+          "Freshers Orientation and Club Carnival for the new batch of students. Included a variety of fun demos, games, and fun events",
+        date: "August 23, 2024",
+        image: "/cc.png",
         link: "#",
       },
       {
-        title: "Ai 101",
+        title: "AI 101",
         description:
-          "Transformer-Based NER e-commerce chatbot, FastAPI deployment, exploration of Keras, TensorFlow, HuggingFace, and FastAPI.",
-        date: "February 12-17, 2024",
-        image: "/event-biy.png",
+          "An immersive kickoff event where freshers engaged in foundational AI concepts, hands-on coding sessions, and insightful talks, setting the stage for innovation and learning.",
+        date: "September 19, 2024",
+        image: "/ai101.png",
         link: "#",
       },
       {
-        title: "Project showcase",
+        title: "Project Showcase",
         description:
-          "AIS shined at the Project Showcase, presenting over 10 groundbreaking projects that redefined innovation and creativity!.",
-        date: "February 12-17, 2024",
+          "AIS shone at the Project Showcase, presenting over 10 groundbreaking projects, the most by any student body, that redefined innovation and creativity!"
+        date: "October 21, 2024",
         image: "/projectshowcase.png",
         link: "#",
       },
       {
-        title: "Gen ai xr workshop",
+        title: "Immersive XR Workshop on Advanced Generative AI",
         description:
-          "Transformer-Based NER e-commerce chatbot, FastAPI deployment, exploration of Keras, TensorFlow, HuggingFace, and FastAPI.",
-        date: "February 12-17, 2024",
-        image: "/event-biy.png",
+          "A deep dive into the fusion of XR and Generative AI, providing students with hands-on experience and practical insights into emerging technologies.",
+        date: "November 13, 2024",
+        image: "/xrgenai.png",
         link: "#",
       },
       {
-        title: "Infossesion+Ai hunt 2.0",
+        title: "AI Hunt 2.0",
         description:
-          "Transformer-Based NER e-commerce chatbot, FastAPI deployment, exploration of Keras, TensorFlow, HuggingFace, and FastAPI.",
-        date: "February 12-17, 2024",
-        image: "/event-biy.png",
+          "AI Hunt 2.0 was an exciting 48-hour online cryptic treasure hunt, featuring a Gen AI workshop, an info session, and dynamic problem-solving challenges that pushed the boundaries of AI exploration."
+        date: "November 13-17, 2024",
+        image: "/aihunt.png",
         link: "#",
       },
-      {
-        title: "Tech Arena",
-        description:
-          "Transformer-Based NER e-commerce chatbot, FastAPI deployment, exploration of Keras, TensorFlow, HuggingFace, and FastAPI.",
-        date: "February 12-17, 2024",
-        image: "/event-biy.png",
-        link: "#",
-      },
+      // {
+      //   title: "Tech Arena",
+      //   description:
+      //     "TechArena 2025 showcased groundbreaking student projects and interactive tech games, celebrating innovation and creativity in the world of technology.",
+      //   date: "January 15, 2024",
+      //   image: "/event-biy.png",
+      //   link: "#",
+      // },
     ],
     leadership: [
       {
