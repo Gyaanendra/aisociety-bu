@@ -29,7 +29,7 @@ const steps: Step[] = [
     icon: "📝",
     formLink: "#",
 
-    dates: "Applications open from 21st-25th January",
+    dates: "Applications open till Saturday 25th January 11:59pm",
     status: "Ongoing",
     applications: 13,
   },
@@ -38,7 +38,7 @@ const steps: Step[] = [
     step: "Step 2",
     title: "Form Shortlisting",
     description:
-      "Form review period where you will be judged by the form responses. AI Generated Form Responses will be rejected.",
+      "Form review period ̰ where you will be judged by the form responses. AI Generated Form Responses will be rejected.",
     icon: "🔍",
     dates: "21st January-25th January",
 
