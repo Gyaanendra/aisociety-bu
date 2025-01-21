@@ -11,7 +11,7 @@ export default function JoinUsBadge() {
             Applications Open Now!
           </h2>
           <p className="text-sm text-primary-foreground">
-            Look out for Volunteer Team forms before events!
+            Apply by 25th January 2024 (Saturday, 11:59pm)
           </p>
         </div>
         <Link
