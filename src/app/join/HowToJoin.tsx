@@ -29,9 +29,9 @@ const steps: Step[] = [
     icon: "📝",
     formLink: "#",
 
-    dates: "Applications open till Saturday 25th January 11:59pm",
+    dates: "Applications open till Monday 27th January 12 noon",
     status: "Ongoing",
-    applications: 13,
+    applications: 128,
   },
 
   {
@@ -40,7 +40,7 @@ const steps: Step[] = [
     description:
       "Form review period ̰ where you will be judged by the form responses. AI Generated Form Responses will be rejected.",
     icon: "🔍",
-    dates: "21st January-25th January",
+    dates: "21st January-27th January",
 
     status: "Ongoing",
   },
@@ -49,7 +49,7 @@ const steps: Step[] = [
     title: "One-on-One Interview",
     description: "Candidate is interviewed on technicalities and soft skills.",
     icon: "🗣️",
-    dates: "25th January-29th January",
+    dates: "26th January-27th January",
     status: "Upcoming",
   },
 ];

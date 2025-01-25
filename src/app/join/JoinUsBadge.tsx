@@ -11,7 +11,7 @@ export default function JoinUsBadge() {
             Applications Open Now!
           </h2>
           <p className="text-sm text-primary-foreground">
-            Apply by 25th January 2024 (Saturday, 11:59pm)
+            Apply by 27th January 2024 (Monday, 12 noon)
           </p>
         </div>
         <Link
